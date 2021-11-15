@@ -1,9 +1,7 @@
-# Color Scheme - Monokai
+# Color Scheme - Monokai Plus
 
 This is a Sublime Text (and Merge) color scheme using the [Monokai color palette](https://monokai.pro/sublime-text).
-Our implementation of Monokai uses the Sublime Text Mariana color scheme as a template with the Monokai color palette.
-
-
+This implementation of Monokai uses the Sublime Text Mariana color scheme as a template with the Monokai color palette.
 
 ## Install
 
@@ -17,5 +15,5 @@ For Sublime Text, edit your `Preferences.sublime-settings` file to use the Monok
     "color_scheme": "Packages/Monokai Color Scheme/Monokai Pro.sublime-color-scheme",
 ```
 
-For Sublime Merge, once installed, it is recommended to install the Sublime Merge theme and follow related theme instructions.
+For Sublime Merge, once installed, it is recommended to install the Sublime Merge theme and follow [related theme](https://github.com/bitsper2nd/merge-monokai-theme) instructions.
 
