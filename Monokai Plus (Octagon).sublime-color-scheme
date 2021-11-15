@@ -1,7 +1,7 @@
 {
     "name": "Monokai Plus Octagon",
-    "author": "Isaac Muse",
-    "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Dracula color palette (Zeno Rocha)",
+    "author": "Bitsper2nd",
+    "comments": "Derivation of: Mariana (Sublime HQ Pty Ltd, Dmitri Voronianski) using Monokai color palette (Monokai)",
     "variables": {
         // Static palette colors. These are constant through all variations.
         "foreground": "hsl(173, 24%, 93%)", // #eaf2f1
@@ -592,7 +592,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Types and definition / declaration keywords should use the following scope. Examples include int, bool, char, func, function, class and def. Depending on the language and semantics, const may be this or storage.modifier.",
+            "name": "Types and definition / declaration keywords",
             "scope": "storage.type",
             "font_style": "italic",
             "foreground": "var(blue)"
@@ -610,7 +610,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Keywords that affect the storage of a variable, function or data structure should use the following scope. Examples include static, inline, const, public and private.",
+            "name": "Keywords that affect the storage of a variable, function or data structure",
             "scope": "storage.modifier, storage.type.modifier",
             "font_style": "italic",
             "foreground": "var(pink)"
@@ -759,7 +759,7 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "Reserved variable names that are specified by the language, such as this, self, super, arguments. Also in function arguments (e.g. like in Python)",
+            "name": "Reserved variable names that are specified by the language",
             "scope": "variable.language, variable.parameter.function.language.special.self.python, variable.parameter.function.language.special.cls.python",
             "font_style": "italic",
             "foreground": "var(darken)"
@@ -775,7 +775,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Immutable variables, often via a const modifier, should receive the following scope. Depending on the language and semantics, entity.name.constant may be a better choice.",
+            "name": "Immutable variables",
             "scope": "variable.other.constant",
             "foreground": "var(purple)"
         },
@@ -785,7 +785,7 @@
             "foreground": "var(foreground)"
         },
         {
-            "name": "Fields, properties, members and attributes of a class or other data structure should use:",
+            "name": "Fields, properties, members and attributes of a class",
             "scope": "variable.other.member",
             "foreground": "var(foreground)"
         },
@@ -800,7 +800,7 @@
             "foreground": "var(foreground)"
         },
         {
-            "name": "Function and method names should be scoped using the following, but only when they are being invoked. When defined, they should use entity.name.function.",
+            "name": "Function and method names",
             "scope": "variable.function",
             "foreground": "var(green)"
         },
