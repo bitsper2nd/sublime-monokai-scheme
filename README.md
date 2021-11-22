@@ -12,7 +12,7 @@ Sublime Text as Sublime Merge will find the color schemes in Sublime Text.
 For Sublime Text, edit your `Preferences.sublime-settings` file to use the Monokai theme:
 
 ```js
-    "color_scheme": "Packages/Monokai Color Scheme/Monokai Pro.sublime-color-scheme",
+    "color_scheme": "Packages/Monokai Color Scheme/Monokai Plus.sublime-color-scheme",
 ```
 
 For Sublime Merge, once installed, it is recommended to install the Sublime Merge theme and follow [related theme](https://github.com/bitsper2nd/merge-monokai-theme) instructions.
