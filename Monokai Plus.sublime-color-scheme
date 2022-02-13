@@ -28,14 +28,14 @@
         "darken": "hsl(0, 1%, 75%)", // #c1c0c0
         // Sublime has difficulty detecting purplish from bluish, etc.
         // Define all colors to ensure correct colorish values.
-        "--redish": "var(red)",
-        "--orangeish": "var(orange)",
-        "--yellowish": "var(yellow)",
-        "--greenish": "var(green)",
-        "--cyanish": "var(cyan)",
-        "--bluish": "var(blue)",
-        "--pinkish": "var(pink)",
-        "--purplish": "var(purple)"
+        "redish": "var(red)",
+        "orangeish": "hsla(20, 96%, 70%, 0.35)",
+        "yellowish": "hsla(45, 100%, 70%, 0.35)",
+        "greenish": "hsla(90, 59%, 66%, 0.35)",
+        "cyanish": "var(cyan)",
+        "bluish": "hsla(186, 71%, 69%, 0.35)",
+        "pinkish": "hsla(345, 100%, 69%, 0.35)",
+        "purplish": "hsla(250, 77%, 78%, 0.35)"
     },
     "globals": {
         "accent": "var(accent)",
@@ -72,7 +72,7 @@
     },
     "rules": [
         {
-            "name": "Comments",
+            "name": "Comments and overrides inside comments",
             "scope": "comment, comment keyword, comment markup.underline.link, comment string, comment punctuation.definition, comment punctuation, comment text",
             "font_style": "italic",
             "foreground": "var(comment)"
@@ -93,24 +93,29 @@
             "foreground": "var(darken)"
         },
         {
-            "name": "Comment TODO",
+            "name": "Comment TODO / FIXME (at least in VSCode Python)",
             "scope": "comment keyword.codetag.notation",
             "foreground": "var(purple)"
         },
         {
-            "name": "git status remote",
+            "name": "Git status remote",
             "scope": "comment.git-status.header.remote",
             "foreground": "var(pink)"
         },
         {
-            "name": "git status local",
+            "name": "Git status local",
             "scope": "comment.git-status.header.local",
             "foreground": "var(blue)"
         },
         {
-            "name": "git status remote",
+            "name": "Git status remote",
             "scope": "comment.other.git-status.head",
             "foreground": "var(foreground)"
+        },
+        {
+            "name": "Docstring",
+            "scope": "string.quoted.docstring, string.quoted.docstring punctuation.definition",
+            "foreground": "var(comment)"
         },
         {
             "name": "Constant",
@@ -124,8 +129,17 @@
         },
         {
             "name": "Constant",
-            "scope": "constant.other.php",
+            "scope": "constant.other.caps",
             "foreground": "var(purple)"
+        },
+        {
+            "name": "Constant",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Placeholders in C",
+            "scope": "constant.other.placeholder.c",
+            "foreground": "var(orange)"
         },
         {
             "name": "Constant as property",
@@ -138,22 +152,22 @@
             "foreground": "var(purple)"
         },
         {
-            "name": "Constant as color",
+            "name": "Constant as color (in css / sass)",
             "scope": "constant.other.color",
             "foreground": "var(purple)"
         },
         {
-            "name": "Constant as character class escape",
+            "name": "Constant as character class escape (e.g. in regex)",
             "scope": "constant.other.character-class.escape",
             "foreground": "var(purple)"
         },
         {
-            "name": "Constant as key",
+            "name": "Constant as key (e.g. in puppet manifests)",
             "scope": "constant.other.key",
             "foreground": "var(purple)"
         },
         {
-            "name": "Constant as symbol",
+            "name": "Constant as symbol (e.g. in ruby)",
             "scope": "constant.other.symbol",
             "foreground": "var(orange)"
         },
@@ -180,7 +194,7 @@
         {
             "name": "Search result line numbers",
             "scope": "constant.numeric.line-number.find-in-files",
-            "foreground": "var(invisibles)"
+            "foreground": "#525053"
         },
         {
             "name": "Search result matched line numbes",
@@ -336,7 +350,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Control keywords",
+            "name": "Control keywords examples include if, try, end and while. Some syntaxes prefer to mark if and else with the conditional variant. The import variant is often used in appropriate situations.",
             "scope": "keyword.control",
             "foreground": "var(pink)"
         },
@@ -382,7 +396,7 @@
         },
         {
             "name": "ruby specific",
-            "scope": "keyword.declaration.class.ruby, keyword.declaration.function.ruby",
+            "scope": "keyword.declaration.class.ruby, keyword.declaration.function.ruby, keyword.declaration.namespace.ruby",
             "foreground": "var(pink)"
         },
         {
@@ -451,29 +465,34 @@
             "foreground": "var(block-caret)"
         },
         {
-            "name": "Function call",
+            "name": "Function call (vs)",
             "scope": "meta.function-call.generic.python, support.function.builtin.python",
             "foreground": "var(green)"
         },
         {
-            "name": "Function arguments",
+            "name": "Function arguments (vs)",
             "scope": "meta.function-call.python meta.function-call.arguments.python",
             "foreground": "var(foreground)"
         },
         {
-            "name": "Constructor",
+            "name": "Constructor (new MyClass())",
             "scope": "meta.instance.constructor",
             "foreground": "var(green)"
         },
         {
-            "name": "Class string name",
+            "name": "Class string name (i.e. in html attributes)",
             "scope": "meta.attribute-with-value.class string, meta.attribute.class.html string",
             "foreground": "var(green)"
         },
         {
-            "name": "ID string name",
+            "name": "ID string name (i.e. in html attributes)",
             "scope": "meta.attribute-with-value.id string, meta.attribute.id.html string",
             "foreground": "var(orange)"
+        },
+        {
+            "name": "JSON keys",
+            "scope": "source.json meta.mapping.key string",
+            "foreground": "var(foreground)"
         },
         {
             "name": "Object members",
@@ -496,12 +515,12 @@
             "foreground": "var(yellow)"
         },
         {
-            "name": "rust specific",
+            "name": "rust specific (brackets and certain type names)",
             "scope": "meta.type_params.rust",
             "foreground": "var(foreground)"
         },
         {
-            "name": "rust specific",
+            "name": "rust specific (variable.language.rust is 'self' keyword.",
             "scope": "meta.attribute.rust, meta.annotation.rust, variable.language.rust, variable.annotation.rust, meta.annotation.rust string, meta.annotation.rust keyword, meta.annotation.rust keyword.operator, meta.attribute.rust string",
             "foreground": "var(darken)"
         },
@@ -516,7 +535,7 @@
             "foreground": "var(block-caret)"
         },
         {
-            "name": "Group",
+            "name": "Group (i.e. in regex)",
             "scope": "punctuation.definition.group",
             "foreground": "var(foreground)"
         },
@@ -526,24 +545,71 @@
             "foreground": "var(comment)"
         },
         {
-            "name": "Variable indicator",
+            "name": "Variable indicator (i.e. in php or in include directives in sass)",
             "scope": "punctuation.definition.variable, punctuation.definition.keyword.scss, punctuation.definition.entity.css",
             "foreground": "var(darken)"
         },
         {
-            "name": "Punctuation section embedded",
+            "name": "Punctuation section embedded (i.e. ?php blocks in html)",
             "scope": "punctuation.section.embedded, punctuation.section.embedded entity.name.tag, punctuation.section.embedded constant.other, punctuation.section.embedded source, punctuation.section.embedded.begin",
             "foreground": "var(orange)"
         },
         {
-            "name": "Punctuation template string",
+            "name": "Punctuation template string (`example`)",
             "scope": "punctuation.template-string.element.begin, punctuation.template-string.element.end, punctuation.definition.string.template.begin, punctuation.definition.string.template.end, string.quoted.template punctuation.definition.string.begin, string.quoted.template punctuation.definition.string.end, punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end",
             "foreground": "var(pink)"
         },
         {
-            "Name": "Punctuation hard line break in Markdown",
+            "name": "Punctuation hard line break in Markdown",
             "scope": "meta.paragraph.markdown meta.dummy.line-break, meta.paragraph.markdown meta.hard-line-break.markdown",
             "background": "var(purple)"
+        },
+        {
+            "name": "region red color",
+            "scope": "region.redish",
+            "foreground": "var(pink)",
+            "background": "var(pinkish)"
+        },
+        {
+            "name": "region orange color",
+            "scope": "region.orangish",
+            "foreground": "var(orange)",
+            "background": "var(orangish)"
+        },
+        {
+            "name": "region yellow color",
+            "scope": "region.yellowish",
+            "foreground": "var(yellow)",
+            "background": "var(yellowish)"
+        },
+        {
+            "name": "region green color",
+            "scope": "region.greenish",
+            "foreground": "var(green)",
+            "background": "var(greenish)"
+        },
+        {
+            "name": "region blue color",
+            "scope": "region.bluish",
+            "foreground": "var(blue)",
+            "background": "var(bluish)"
+        },
+        {
+            "name": "region purple color",
+            "scope": "region.purplish",
+            "foreground": "var(purple)",
+            "background": "var(purplish)"
+        },
+        {
+            "name": "region pink color",
+            "scope": "region.pinkish",
+            "foreground": "var(pink)",
+            "background": "var(pinkish)"
+        },
+        {
+            "name": "White for ST3 for non-colorized scheme",
+            "scope": "region.whitish",
+            "foreground": "hsl(0, 0%, 100%)"
         },
         {
             "name": "source",
@@ -592,7 +658,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Types and definition / declaration keywords",
+            "name": "Types and definition / declaration keywords should use the following scope. Examples include int, bool, char, func, function, class and def. Depending on the language and semantics, const may be this or storage.modifier.",
             "scope": "storage.type",
             "font_style": "italic",
             "foreground": "var(blue)"
@@ -610,7 +676,7 @@
             "foreground": "var(pink)"
         },
         {
-            "name": "Keywords that affect the storage of a variable, function or data structure",
+            "name": "Keywords that affect the storage of a variable, function or data structure should use the following scope. Examples include static, inline, const, public and private.",
             "scope": "storage.modifier, storage.type.modifier",
             "font_style": "italic",
             "foreground": "var(pink)"
@@ -722,7 +788,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Library type property",
+            "name": "Library type property, JSON keys",
             "scope": "support.type.property-name",
             "font_style": "normal",
             "foreground": "var(foreground)"
@@ -759,7 +825,7 @@
             "foreground": "var(orange)"
         },
         {
-            "name": "Reserved variable names that are specified by the language",
+            "name": "Reserved variable names that are specified by the language, such as this, self, super, arguments. Also in function arguments (e.g. like in Python)",
             "scope": "variable.language, variable.parameter.function.language.special.self.python, variable.parameter.function.language.special.cls.python",
             "font_style": "italic",
             "foreground": "var(darken)"
@@ -775,7 +841,7 @@
             "foreground": "var(blue)"
         },
         {
-            "name": "Immutable variables",
+            "name": "Immutable variables, often via a const modifier, should receive the following scope. Depending on the language and semantics, entity.name.constant may be a better choice.",
             "scope": "variable.other.constant",
             "foreground": "var(purple)"
         },
@@ -785,7 +851,7 @@
             "foreground": "var(foreground)"
         },
         {
-            "name": "Fields, properties, members and attributes of a class",
+            "name": "Fields, properties, members and attributes of a class or other data structure should use:",
             "scope": "variable.other.member",
             "foreground": "var(foreground)"
         },
@@ -800,7 +866,7 @@
             "foreground": "var(foreground)"
         },
         {
-            "name": "Function and method names",
+            "name": "Function and method names should be scoped using the following, but only when they are being invoked. When defined, they should use entity.name.function.",
             "scope": "variable.function",
             "foreground": "var(green)"
         },
