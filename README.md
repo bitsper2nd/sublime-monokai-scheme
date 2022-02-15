@@ -11,7 +11,7 @@ Sublime Text as Sublime Merge will find the color schemes in Sublime Text.
 
 For Sublime Text, edit your `Preferences.sublime-settings` file to use the Monokai theme:
 
-```js
+```
     "color_scheme": "Packages/Monokai Color Scheme/Monokai Plus.sublime-color-scheme",
 ```
 
@@ -19,7 +19,18 @@ For Sublime Merge, once installed, it is recommended to install the Sublime Merg
 
 ## Screenshots
 
-![machine](screenshots/machine.PNG)
-![octagon](screenshots/octagon.PNG)
-![ristretto](screenshots/ristretto.PNG)
-![spectrum](screenshots/spectrum.PNG)
+Monokai Plus (Machine)
+
+![machine](screenshots/machine.png "Monokai Plus (Machine)")
+
+Monokai Plus (Octagon)
+
+![octagon](screenshots/octagon.png "Monokai Plus (Octagon)")
+
+Monokai Plus (Ristretto)
+
+![ristretto](screenshots/ristretto.png "Monokai Plus (Ristretto)")
+
+Monokai Plus (Spectrum)
+
+![spectrum](screenshots/spectrum.png "Monokai Plus (Spectrum)")
