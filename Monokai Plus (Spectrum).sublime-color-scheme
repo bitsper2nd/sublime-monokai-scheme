@@ -28,14 +28,14 @@
         "darken": "hsl(264, 7%, 73%)", // #bab6c0
         // Sublime has difficulty detecting purplish from bluish, etc.
         // Define all colors to ensure correct colorish values.
-        "redish": "var(red)",
-        "orangeish": "hsla(23, 98%, 66%, 0.35)",
-        "yellowish": "hsla(51, 96%, 69%, 0.35)",
-        "greenish": "hsla(133, 54%, 66%, 0.35)",
-        "cyanish": "var(cyan)",
-        "bluish": "hsla(188, 74%, 63%, 0.35)",
-        "pinkish": "hsla(343, 96%, 68%, 0.35)",
-        "purplish": "hsla(247, 61%, 72%, 0.35)"
+        "--redish": "var(red)",
+        "--orangeish": "var(orange)",
+        "--yellowish": "var(yellow)",
+        "--greenish": "var(green)",
+        "--cyanish": "var(cyan)",
+        "--bluish": "var(blue)",
+        "--pinkish": "var(pink)",
+        "--purplish": "var(purple)",
     },
     "globals": {
         "accent": "var(accent)",
@@ -568,43 +568,43 @@
             "name": "region red color",
             "scope": "region.redish",
             "foreground": "var(pink)",
-            "background": "var(pinkish)"
+            "background": "var(--pinkish)"
         },
         {
             "name": "region orange color",
             "scope": "region.orangish",
             "foreground": "var(orange)",
-            "background": "var(orangeish)"
+            "background": "var(--orangeish)"
         },
         {
             "name": "region yellow color",
             "scope": "region.yellowish",
             "foreground": "var(yellow)",
-            "background": "var(yellowish)"
+            "background": "var(--yellowish)"
         },
         {
             "name": "region green color",
             "scope": "region.greenish",
             "foreground": "var(green)",
-            "background": "var(greenish)"
+            "background": "var(--greenish)"
         },
         {
             "name": "region blue color",
             "scope": "region.bluish",
             "foreground": "var(blue)",
-            "background": "var(bluish)"
+            "background": "var(--bluish)"
         },
         {
             "name": "region purple color",
             "scope": "region.purplish",
             "foreground": "var(purple)",
-            "background": "var(purplish)"
+            "background": "var(--purplish)"
         },
         {
             "name": "region pink color",
             "scope": "region.pinkish",
             "foreground": "var(pink)",
-            "background": "var(pinkish)"
+            "background": "var(--pinkish)"
         },
         {
             "name": "White for ST3 for non-colorized scheme",

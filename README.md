@@ -17,3 +17,9 @@ For Sublime Text, edit your `Preferences.sublime-settings` file to use the Monok
 
 For Sublime Merge, once installed, it is recommended to install the Sublime Merge theme and follow [related theme](https://github.com/bitsper2nd/merge-monokai-theme) instructions.
 
+## Screenshots
+
+![machine](screenshots/machine.PNG)
+![octagon](screenshots/octagon.PNG)
+![ristretto](screenshots/ristretto.PNG)
+![spectrum](screenshots/spectrum.PNG)
