@@ -15,7 +15,7 @@
         "purple": "hsl(258, 86%, 80%)", // #baa0f8
         // Variant specific colors (change these for variants)
         "background": "hsl(200, 16%, 18%)", // #273136
-        "selection": "hsl(280, 2%, 25%)", // #403e41
+        "selection": "hsl(200, 11%, 25%)", // #394247
         "comment": "hsl(189, 6%, 45%)", // #6b7678
         "line-highlight": "color(var(foreground) a(5%))",
         "accent": "var(yellow)",
