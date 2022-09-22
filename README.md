@@ -19,6 +19,10 @@ For Sublime Merge, once installed, it is recommended to install the Sublime Merg
 
 ## Screenshots
 
+Monokai Plus (Cognition)
+
+![machine](screenshots/cognition.png "Monokai Plus (Cognition)")
+
 Monokai Plus (Machine)
 
 ![machine](screenshots/machine.png "Monokai Plus (Machine)")
@@ -26,6 +30,10 @@ Monokai Plus (Machine)
 Monokai Plus (Octagon)
 
 ![octagon](screenshots/octagon.png "Monokai Plus (Octagon)")
+
+Monokai Plus
+
+![plus](screenshots/plus.png "Monokai Plus")
 
 Monokai Plus (Ristretto)
 
