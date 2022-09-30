@@ -15,8 +15,6 @@ For Sublime Text, edit your `Preferences.sublime-settings` file to use the Monok
     "color_scheme": "Packages/Monokai Color Scheme/Monokai Plus.sublime-color-scheme",
 ```
 
-For Sublime Merge, once installed, it is recommended to install the Sublime Merge theme and follow [related theme](https://github.com/bitsper2nd/merge-monokai-theme) instructions.
-
 ## Screenshots
 
 Monokai Plus (Cognition)
@@ -42,3 +40,7 @@ Monokai Plus (Ristretto)
 Monokai Plus (Spectrum)
 
 ![spectrum](screenshots/spectrum.png "Monokai Plus (Spectrum)")
+
+## Extra
+
+Here is the repo of the [theme](https://github.com/bitsper2nd/merge-monokai-theme) for Sublime Merge. Also checkout my [other color scheme](https://github.com/bitsper2nd/sublime-mariana-scheme) based on the Mariana color palette.
