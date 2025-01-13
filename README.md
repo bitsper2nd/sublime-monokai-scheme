@@ -17,9 +17,17 @@ For Sublime Text, edit your `Preferences.sublime-settings` file to use the Monok
 
 ## Screenshots
 
+Monokai Plus (Dawn)
+
+![dawn](https://github.com/user-attachments/assets/543d1ff2-fee1-4ad7-b16e-54cb042af314 "Monokai Plus (Dawn)")
+
+Monokai Plus (Solar)
+
+![solar](https://github.com/user-attachments/assets/b2205bde-9a35-41f3-bc3a-3967c6f43160 "Monokai Plus (Solar)")
+
 Monokai Plus (Cognition)
 
-![machine](https://github.com/user-attachments/assets/b1606c95-1cd2-4212-88c6-542d1cedc7ea "Monokai Plus (Cognition)")
+![cognition](https://github.com/user-attachments/assets/b1606c95-1cd2-4212-88c6-542d1cedc7ea "Monokai Plus (Cognition)")
 
 Monokai Plus (Machine)
 
