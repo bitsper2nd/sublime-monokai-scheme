@@ -19,27 +19,27 @@ For Sublime Text, edit your `Preferences.sublime-settings` file to use the Monok
 
 Monokai Plus (Cognition)
 
-![machine](screenshots/cognition.png "Monokai Plus (Cognition)")
+![machine](https://github.com/user-attachments/assets/b1606c95-1cd2-4212-88c6-542d1cedc7ea "Monokai Plus (Cognition)")
 
 Monokai Plus (Machine)
 
-![machine](screenshots/machine.png "Monokai Plus (Machine)")
+![machine](https://github.com/user-attachments/assets/ea1eff26-87cb-43c5-95a2-c71d317e6d7d "Monokai Plus (Machine)")
 
 Monokai Plus (Octagon)
 
-![octagon](screenshots/octagon.png "Monokai Plus (Octagon)")
+![octagon](https://github.com/user-attachments/assets/e7043703-8152-4c60-9bf1-55d9e37667dc "Monokai Plus (Octagon)")
 
 Monokai Plus
 
-![plus](screenshots/plus.png "Monokai Plus")
+![plus](https://github.com/user-attachments/assets/377c5dab-ba04-4b26-8105-e434b1a32d68 "Monokai Plus")
 
 Monokai Plus (Ristretto)
 
-![ristretto](screenshots/ristretto.png "Monokai Plus (Ristretto)")
+![ristretto](https://github.com/user-attachments/assets/d1806d4e-b5a3-4b24-a7d1-cc84ac24b337 "Monokai Plus (Ristretto)")
 
 Monokai Plus (Spectrum)
 
-![spectrum](screenshots/spectrum.png "Monokai Plus (Spectrum)")
+![spectrum](https://github.com/user-attachments/assets/f427498c-fb70-44f5-8e37-e5f0852f355c "Monokai Plus (Spectrum)")
 
 ## Extra
 
